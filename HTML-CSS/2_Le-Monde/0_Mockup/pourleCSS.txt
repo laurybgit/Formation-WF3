@@ -1,0 +1,9 @@
+Instructions : 
+
+Le texte est en arial.
+
+-Ce qui apparait en gris (et souligné) est systématiquement un lien #636363
+-Le texte en bleu (et en gras) est considéré comme important/ de couleur blue (#0000ff)
+-Les citations sont en bleu #008cad (et en italique) mais ne sont pas d'importance haute. Vous pouvez la mettre en Georgia, même si ce n'est pas la "vraie" police utilisée...
+
+Enfin, les blocs font 665px de largeur, ont un fond de couleur #e7f4f7
