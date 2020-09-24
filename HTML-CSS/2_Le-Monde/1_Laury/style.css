@@ -1,20 +1,22 @@
-*
+/* Exercice du Monde  */
+html{
+  font-size:90%; 
+}
+
+body
 {
   font-family: Arial, Helvetica, sans-serif; 
+  margin: 0; 
 }
 
 section{
-  margin: 10px; 
+  margin: 10px auto;
+  /* Ici on a bien nos marges horizontales de 10px et on lui dit auto pour se mettre automatiquement au centre (car il va y avoir la répartition. Cela marche à condition de lui spécifier une taille ! */
   padding: 5px; 
-
   width: 665px; 
-
   border: solid 1px #0000001c; 
-  background-color: #e7f4f7; 
-  background-image:url(/HTML-CSS/2_Le-Monde/0_Mockup/images/fond-num.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-
+  background: #e7f4f7 url(/HTML-CSS/2_Le-Monde/0_Mockup/images/fond-num.png) no-repeat bottom right; 
+  /* Il est possible aussi de préciser pour l'image de bg, un pourcentage au lieu de right bottom. Par exemple, 100% 100% va aligner à 100% du contenu à l'horizontale, 100% du contenu à la verticale. Avantage : ça permet de décaler facilement !  */
   font-size: 0.9rem; 
 }
 
@@ -28,10 +30,9 @@ img{
 }
 /* Modifications textes*/ 
 h2{
-  background-image: url(/HTML-CSS/2_Le-Monde/0_Mockup/images/fd-degrade.png); 
-  background-repeat: no-repeat;
+  background: url(/HTML-CSS/2_Le-Monde/0_Mockup/images/fd-degrade.png) repeat-y; 
   margin: 0; 
-  font-size: 1.5em; 
+  padding: 5px 5px; 
 }
 
 h2+p{
@@ -52,7 +53,7 @@ a{
   font-weight: thin; 
 }
 
-span{
+q{
   color: rgb(27, 170, 170); 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold; 

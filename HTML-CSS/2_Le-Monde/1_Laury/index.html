@@ -24,15 +24,18 @@
 
   <section>
     <!-- Caché dans le mockup, pourquoi ? Référencement ? -->
+    <!-- Hidden : énorme erreur ! Faire une class secrète en display none, bien mieux ! -->
     <p hidden>Gros plan sur</p>
 
     <h2>les Philippines : Un impôt révolutionnaire qui rapporte</h2>
 
     <!-- Ce paragraphe aura un comportement particulier 2 fois, dans le CSS il sera h2+p -->
+    <!-- L'astuce de h2+p n'est pas forcément la mieux adaptable. Selon les cas, on peut choisir une class à la place -->
     <p>04.01.2011</p>
 
-    <!-- Image alignée à droite, comportement 2 fois dans la page juste après le h2 p -->
-    <img src="/HTML-CSS/2_Le-Monde/0_Mockup/images/npa.png" alt="1.5 milliards de pesos">
+    <figure>
+      <img src="/HTML-CSS/2_Le-Monde/0_Mockup/images/npa.png" alt="1.5 milliards de pesos">
+    </figure>
   
     <p>Depuis 1998, la <a href="#"><strong>Nouvelle armée du peuple (NPA)</strong></a>, <a href="#">bras armé du Parti communiste philippin (PCP)</a>, a selon l'armée extorqué <strong>1,5 milliard de pesos [25 millions d'euros]</strong> auprès des politiques, hommes d'affaires et entreprises, écrit le Philippine Daily Inquirer.</p> 
     
@@ -56,7 +59,7 @@
     
     <p>Certains journaux locaux n'ont pas hésité <strong>à traiter cette information en première page</strong>, à l'instar du quotidien <a href="#">Los Tiempos</a> qui a publié une photo du chef de l'Etat sur sont lit d'hôpital (voir ci-contre). Mais cette information a également eu un écho très fort à l'étranger en raison de l'attitude du président bolivien lors d'un <a href="#">match amical</a> disputé début octobre.</p>
     
-    <p>Au cours de cette rencontre, Morales n'avait pas hésité à <strong>asséner un coup de genou</strong> à un adversaire pour se venger. Selon le quotidien La Prensa, <span>"le genou le plus célèbre du monde est sans nul doute celui du président Morales"</span>. Le journal revient du retentissement que cet incident de jeu avait eu dans le monde entier grâce à la diffusion d'une <a href="#">vidéo sur Internet</a>. <span>"Ce coup de genou a constitué un apport très important de la Bolivie à la campagne mondiale visant à favoriser le fair-play. Nous avons montré par l'exemple de ce qu'il ne faut pas faire, en football comme en politique"</span>, écrit le journal.</p> 
+    <p>Au cours de cette rencontre, Morales n'avait pas hésité à <strong>asséner un coup de genou</strong> à un adversaire pour se venger. Selon le quotidien La Prensa, <q>le genou le plus célèbre du monde est sans nul doute celui du président Morales</q>. Le journal revient du retentissement que cet incident de jeu avait eu dans le monde entier grâce à la diffusion d'une <a href="#">vidéo sur Internet</a>. <q>Ce coup de genou a constitué un apport très important de la Bolivie à la campagne mondiale visant à favoriser le fair-play. Nous avons montré par l'exemple de ce qu'il ne faut pas faire, en football comme en politique</q>, écrit le journal.</p> 
     
     <p>Pour ce quotidien, le chef de l'Etat a malheureusement prouvé depuis qu'il était capable d'agir de la manière hors du terrain, en adoptant notamment une loi rejetée par la majorité des médias locaux.</p>
   
