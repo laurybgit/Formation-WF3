@@ -1,0 +1,80 @@
+/* CSS de l'exercice Wikipédia 
+Auteur : Christian M. 
+Date : 21-24 septembre 2020 */
+
+div{
+
+  border: solid 1px #bdd8fb; 
+  border-radius : 10px; 
+
+  box-shadow: 0px 0px 3px #999; 
+
+  padding: 10px 10px 50px 10px; 
+
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 0.8rem; 
+}
+
+h2{
+  margin-top: 0; 
+  margin-bottom: 10px; 
+
+  font-family: serif; 
+  font-size: 1.6rem;
+  font-variant: small-caps;
+  border-bottom: 2px solid #bdd8fb; 
+}
+
+/* Modifier l'interligne des paragraphes et listes non-ordonnées */
+p,ul 
+{
+  line-height: 1.2rem;
+}
+
+/* Modifier le padding de notre liste en bas */
+ul 
+{
+  padding-left: 25px; 
+}
+/* Tous les frères cadets directs d'une image sont rouge : juste pour le test */
+img + p {
+  color: red; 
+}
+
+/* Petite spécificité du Lire la suite  */
+.suite{
+  padding-left: 35px; 
+
+  background-image: url(./mockup/img/etoileGrise.svg); 
+  background-repeat: no-repeat;
+  background-position: 10px -1px; 
+}
+
+/* Notre class submenu */
+.submenu {
+  padding-left: 0; 
+  text-align: right; 
+}
+
+/* Les li qui sont enfant d'une classe submenu */
+.submenu li {
+  display: inline; 
+  font-weight: bold; 
+}
+
+/* Les li qui sont frères cadets directs d'une li qui sont dans la classe submenu  */
+.submenu li+li{
+  margin-left: 10px; 
+}
+
+/* Modifier l'aspect des liens non-visités */
+a{
+  color: blue; 
+  text-decoration: none;
+}
+
+/* Nos images */
+img{
+  float: right; 
+  margin: 0 0 5px 5px; 
+}
