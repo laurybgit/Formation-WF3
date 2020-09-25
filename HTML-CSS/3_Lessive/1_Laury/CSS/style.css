@@ -9,23 +9,24 @@
 }
 
 /* Général */
-body{
-  background-color: #3d3b24; 
-}
-
 html{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%; 
 }
 
+body{
+  background-color: #3d3b24;
+  box-sizing: border-box;  
+}
+
 article
 {
   width: 724px; 
-  box-sizing: border-box; 
-  margin: auto; 
   padding: 20px; 
-
+  margin: auto;
   background-color: #e4dFA4;
+  border-radius: 5px; 
+  box-shadow: 2px 2px 2px; 
 }
 
 /* Boîtes */
@@ -77,12 +78,14 @@ article
 
 /* Textes */
 h1{
-  font-family: 'chunkfiveregular', sans-serif;
-  border: 15px solid black; 
-  border-radius: 0 25% 0 0; 
+  margin: 0 19px 19px 19px;
+  font-family: 'chunkfiveregular', serif;
+  border-radius: 0 170px 0 0 / 0 35px 0 0; /* Les premières valeurs correspondent au décalage horizontal, les autres au décalage vertical */ 
   background-color: black;
   font-size: 1.5rem;  
   color: white; 
+  font-weight: normal;
+  padding: 4px;  
 }
 
 h2{
@@ -99,10 +102,12 @@ strong{
 figure{
   margin: 0 10px 15px 0; 
   padding: 10px 50px; 
-  background-color: white; 
+  background-color: white;
 }
 
 /* Liste */
 ul{
-  list-style-image: url(/HTML-CSS/3_Lessive/0_Mockup/images/etoile.png)
+  padding-left: 17px; 
+  list-style-image: url(/HTML-CSS/3_Lessive/0_Mockup/images/etoile.png); 
+  line-height: 1.5rem; 
 }
