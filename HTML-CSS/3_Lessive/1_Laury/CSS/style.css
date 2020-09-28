@@ -15,8 +15,7 @@ html{
 }
 
 body{
-  background-color: #3d3b24;
-  box-sizing: border-box;  
+  background-color: #3d3b24; 
 }
 
 article
@@ -36,43 +35,41 @@ article
   flex-wrap: nowrap;
 }
 
-.left-side{
+section{
   box-sizing: border-box; 
   flex-shrink: 0;
   width: 210px;  
   margin: 0 25px; 
 }
 
-.center-side{
+section+section{
   box-sizing: border-box; 
   flex-shrink: 0; 
   width: 260px; 
   margin: 0 29px 0 0; 
 }
 
-.right-side{
+.aside{
   box-sizing: border-box; 
   flex-shrink: 0; 
   width: 150px; 
   margin-right: 25px; 
 }
 /* Bouton */
-.button{
-  display:flex; 
+.button a{
+  display:block; 
   align-items: center;
-  height: 50px; 
+  padding: 8px 10px; 
   background-color: #cabf3e;
   text-align: center;
   border: solid 2px white;  
   border-radius: 3px; 
-}
-
-.button a{
   color: #680000; 
   text-decoration: none;
 }
 
-.button:hover{
+/* Ne pas oublier le focus pour l'accessibilité */
+.button a:hover, .button a:focus{
   background-color: #928F69; 
 }
 
@@ -109,5 +106,8 @@ figure{
 ul{
   padding-left: 17px; 
   list-style-image: url(/HTML-CSS/3_Lessive/0_Mockup/images/etoile.png); 
-  line-height: 1.5rem; 
+}
+
+li+li{
+  margin-top: 10px;
 }
