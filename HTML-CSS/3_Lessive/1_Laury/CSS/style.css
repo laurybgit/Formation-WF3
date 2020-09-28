@@ -51,26 +51,43 @@ section+section{
 
 .aside{
   box-sizing: border-box; 
-  flex-shrink: 0; 
+  /* flex-shrink: 0;  */
   width: 150px; 
   margin-right: 25px; 
 }
 /* Bouton */
-.button a{
-  display:block; 
-  align-items: center;
-  padding: 8px 10px; 
-  background-color: #cabf3e;
+.button{
+  margin: auto; 
+  display: flex;
+  min-height: 55px;
+  width: 150px;  
   text-align: center;
+}
+
+.button a{
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  background-color: #cabf3e;
   border: solid 2px white;  
   border-radius: 3px; 
   color: #680000; 
   text-decoration: none;
+    /* Agrément transition */
+    transition-property: background-color; 
+    transition-duration: 500ms; 
+    transition-timing-function: cubic-bezier(.6,-0.28,.74,.05);
 }
 
 /* Ne pas oublier le focus pour l'accessibilité */
-.button a:hover, .button a:focus{
-  background-color: #928F69; 
+.button a:hover{
+  background-color: #3198aa; 
+  color: white; 
+}
+
+.button a:focus{
+  background-color: #3198aa;
+  transition: none; 
 }
 
 /* Textes */

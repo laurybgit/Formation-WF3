@@ -1,0 +1,81 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto; 
+  width: 1024px; 
+}
+
+/* -------------------------------- Barre de navigation ----------------------------------- */
+nav{
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start; 
+  /* margin: auto;  */
+  background-color: #373c3f;
+  min-height: 18px; 
+}
+
+nav ul a{
+  /* width: 100%;  */
+  color: white; 
+  padding: 18px; 
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+      /* Transition */
+      transition-property: background-color;
+      transition-delay: 500ms; 
+      transition-timing-function: ease-in; 
+}
+
+/* Compliqué de remettre le fond partout avec le hover! */
+nav ul a:hover{
+  width: 100%; 
+  background-color: rgb(25, 131, 131); 
+}
+
+/* -------------------------------- Blocs ----------------------------------- */
+section{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center; 
+  align-items: center;
+
+  background-color: #0da4ba; 
+}
+
+div{
+  width: 100%; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-evenly; 
+}
+
+section+section{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start; 
+  background-color: white; 
+}
+
+figure{
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+
+/* Textes */
+h1{
+  color: white; 
+  font-size: 3rem; 
+}
+
+h2{
+  color: white; 
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 65%;
+}
+
+
