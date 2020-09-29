@@ -35,6 +35,11 @@ nav ul a:hover{
 
 /* -------------------------------- Blocs ----------------------------------- */
 
+/* Enlever les marges à figure */
+figure{
+  margin: 0; 
+}
+
 /* Premier bloc blue */
 .blue-container{
   display: flex; 
@@ -70,7 +75,7 @@ nav ul a:hover{
   justify-content: space-around; 
   align-items: center; 
 
-  height: 150px;  
+  height: 150px; 
 
   background-color: red; 
 }
@@ -81,11 +86,12 @@ nav ul a:hover{
 
   background-color: #27212c;
   font-size: 1.5rem; 
-  color: white; 
+  color: rgb(221, 185, 238); 
   
   height: 100%; 
+  padding: 0 10%; 
 
-  flex-grow: 1; 
+  flex-grow: 5; 
 }
 
 .figure_grey-container{
@@ -93,18 +99,23 @@ nav ul a:hover{
   display: flex; 
   align-items: center; 
   justify-content: flex-end; 
-  flex-grow: 1;
+  flex-grow: 0;
   height: 100%; 
 
-  margin: 0; 
+  padding: 0 15%; 
 
   background-color: #bc3183; 
 }
 
 .img_grey-container{
-  height: 50px; 
+  height: 25px; 
 }
 
+/* Troisième bloc purple*/
+.purple-container{
+  background-color: purple; 
+  height: 150px; 
+}
 /* Textes */
 
 
