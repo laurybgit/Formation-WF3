@@ -1,0 +1,122 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: auto; 
+  width: 1024px; 
+}
+
+/* -------------------------------- Barre de navigation ----------------------------------- */
+nav{
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start; 
+  /* margin: auto;  */
+  background-color: #373c3f;
+  min-height: 18px; 
+}
+
+nav ul a{
+  /* width: 100%;  */
+  color: white; 
+  padding: 18px; 
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+      /* Transition */
+      transition-property: background-color;
+      transition-delay: 250ms; 
+      transition-timing-function: cubic-bezier(.76,.05,.86,.06); 
+}
+
+/* Compliqué de remettre le fond partout avec le hover! */
+nav ul a:hover{
+  width: 100%; 
+  background-color: rgb(25, 131, 131); 
+}
+
+/* -------------------------------- Blocs ----------------------------------- */
+
+/* Enlever les marges à figure */
+figure{
+  margin: 0; 
+}
+
+/* Premier bloc blue */
+.blue-container{
+  display: flex; 
+  flex-direction: column;
+
+  justify-content: center; 
+  align-items: center;
+
+  background-color: #0da4ba; 
+  color: white; 
+
+  padding: 60px; 
+}
+
+.title_blue-container{
+  font-size: 2.5rem; 
+}
+
+.second_blue-container{
+  display: flex; 
+  box-sizing: border-box; 
+  width: 100%; 
+  padding-left: 1%; 
+  padding-right: 18%; 
+
+  justify-content: space-between;
+}
+
+/* Deuxième bloc grey */
+.grey-container{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-items: center; 
+
+  height: 150px; 
+
+  background-color: red; 
+}
+
+.title_grey-container{
+  display: flex;
+  align-items: center;  
+
+  background-color: #27212c;
+  font-size: 1.5rem; 
+  color: rgb(221, 185, 238); 
+  
+  height: 100%; 
+  padding: 0 10%; 
+
+  flex-grow: 5; 
+}
+
+.figure_grey-container{
+
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-end; 
+  flex-grow: 0;
+  height: 100%; 
+
+  padding: 0 15%; 
+
+  background-color: #bc3183; 
+}
+
+.img_grey-container{
+  height: 25px; 
+}
+
+/* Troisième bloc purple*/
+.purple-container{
+  background-color: purple; 
+  height: 150px; 
+}
+/* Textes */
+
+
+
