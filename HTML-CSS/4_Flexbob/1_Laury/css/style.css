@@ -1,4 +1,4 @@
-body{
+#wrapper{
   font-family: 'Montserrat', sans-serif;
   margin: auto; 
   width: 1024px; 
@@ -23,8 +23,8 @@ nav ul a{
   font-size: 0.8rem;
       /* Transition */
       transition-property: background-color;
-      transition-delay: 500ms; 
-      transition-timing-function: ease-in; 
+      transition-delay: 250ms; 
+      transition-timing-function: cubic-bezier(.76,.05,.86,.06); 
 }
 
 /* Compliqué de remettre le fond partout avec le hover! */
@@ -34,48 +34,88 @@ nav ul a:hover{
 }
 
 /* -------------------------------- Blocs ----------------------------------- */
-section{
+
+/* Enlever les marges à figure */
+figure{
+  margin: 0; 
+}
+
+/* Premier bloc blue */
+.blue-container{
   display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   justify-content: center; 
   align-items: center;
 
   background-color: #0da4ba; 
+  color: white; 
+
+  padding: 60px; 
 }
 
-div{
+.title_blue-container{
+  font-size: 2.5rem; 
+}
+
+.second_blue-container{
+  display: flex; 
+  box-sizing: border-box; 
   width: 100%; 
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-evenly; 
+  padding-left: 1%; 
+  padding-right: 18%; 
+
+  justify-content: space-between;
 }
 
-section+section{
+/* Deuxième bloc grey */
+.grey-container{
   display: flex; 
   flex-direction: row; 
-  justify-content: flex-start; 
-  background-color: white; 
+  justify-content: space-around; 
+  align-items: center; 
+
+  height: 150px; 
+
+  background-color: red; 
 }
 
-figure{
+.title_grey-container{
+  display: flex;
+  align-items: center;  
+
+  background-color: #27212c;
+  font-size: 1.5rem; 
+  color: rgb(221, 185, 238); 
+  
+  height: 100%; 
+  padding: 0 10%; 
+
+  flex-grow: 5; 
+}
+
+.figure_grey-container{
+
   display: flex; 
+  align-items: center; 
   justify-content: flex-end; 
+  flex-grow: 0;
+  height: 100%; 
+
+  padding: 0 15%; 
+
+  background-color: #bc3183; 
 }
 
+.img_grey-container{
+  height: 25px; 
+}
 
+/* Troisième bloc purple*/
+.purple-container{
+  background-color: purple; 
+  height: 150px; 
+}
 /* Textes */
-h1{
-  color: white; 
-  font-size: 3rem; 
-}
-
-h2{
-  color: white; 
-  font-size: 1rem;
-  font-weight: 400;
-  opacity: 65%;
-}
 
 
