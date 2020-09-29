@@ -48,7 +48,7 @@ figure{
   justify-content: center; 
   align-items: center;
 
-  background: rgb(13,181,187);
+  background-color: rgba (13,181,187,1); 
   background: linear-gradient(342deg, rgba(13,181,187,1) 0%, rgba(23,199,217,1) 36%, rgba(244,250,250,1) 92%);
   color: white; 
 
@@ -56,17 +56,19 @@ figure{
 }
 
 .title_blue-container{
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
+  font-weight: 600; 
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
 }
 
 .second_blue-container{
   display: flex; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  align-items: baseline;  
   width: 100%; 
-  padding-left: 1%; 
-  padding-right: 18%; 
-
   justify-content: space-between;
+  padding-left: calc(1/100*100%);  
+  padding-right: calc(23/100*100%); 
 }
 
 /* Deuxième bloc grey */
@@ -76,7 +78,7 @@ figure{
   justify-content: space-around; 
   align-items: center; 
 
-  height: 150px; 
+  height: 250px; 
 
   background-color: red; 
 }
@@ -113,14 +115,7 @@ figure{
 }
 
 /* Troisième bloc purple*/
-.purple-container{
-  background-color: purple; 
-  height: 150px; 
-}
+
+
 /* Textes */
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 7504114ee6823b9ae24ba38968cda7f263b90651
 
