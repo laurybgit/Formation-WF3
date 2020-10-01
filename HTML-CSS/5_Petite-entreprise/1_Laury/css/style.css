@@ -1,11 +1,117 @@
-#wrapper{
-  width: 750px;
-  margin: auto; 
+/* html{
+  font-size: 80%; 
+} */
 
-  background-color: pink;
+body{
+  background-image: url(../../0_Mockup/images/fond-page.png) 
 }
 
+#wrapper{
+  display:flex; 
+  flex-direction: column;
+  width: 750px;
+  margin: 0 auto; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+/* Flex header */
 header{
   display: flex; 
-  align-items: center; 
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  align-items: baseline; 
+  background-color: green; 
+  font-size: 1.5rem; 
+  color: white; 
+}
+
+header p{
+  font-size: 1rem; 
+  color: black; 
+}
+
+/* Englobage général */
+#general{
+  display: flex; 
+}
+
+/* Flex nav */
+#nav
+{
+  display: flex;
+  flex-direction: row; 
+  width: 25%; 
+  justify-content: center;
+  /* width: calc(750px/4); */
+}
+
+ul{
+  list-style-type: none;
+  padding: 0; 
+}
+
+nav a {
+  display: block; 
+  background-color: rgba(196,213,118,1); 
+  background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(196,213,118,1) 85%);
+  color:black; 
+  border-radius: 3px; 
+  margin: 20px; 
+  padding: 12px; 
+}
+
+nav a:hover, .actuel{
+  background: green; 
+}
+
+
+
+
+/* Englobage main*/
+main{
+  display: flex; 
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 19px; 
+  width: 75%; 
+  /* width: calc(750px/4*3);  */
+
+  background-color: #c6d99c;
+}
+
+/* Deux articles après la nav */
+#left-aside{
+  display: flex; 
+  flex-direction: column; 
+  width: 60%; 
+}
+
+#right-aside{
+  display: flex; 
+  flex-direction: column; 
+  width: 40%; 
+}
+
+/* Section dans le premier article */
+.section1_article{
+  margin: 15px; 
+  padding: 10px; 
+  background-color: white; 
+}
+
+.section2_article{
+  margin: 15px; 
+  padding: 10px; 
+  background-color: white; 
+}
+
+/* Textes */
+h2 {
+  background-color: black; 
+  color: white; 
+  font-size: 1.2rem; 
+}
+
+h3{
+  font-size: 0.8rem; 
 }
