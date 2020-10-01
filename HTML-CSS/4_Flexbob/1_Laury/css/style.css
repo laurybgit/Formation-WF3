@@ -75,12 +75,10 @@ figure{
 .grey-container{
   display: flex; 
   flex-direction: row; 
-  justify-content: space-around; 
+  justify-content: space-between; 
   align-items: center; 
 
   height: 250px; 
-
-  background-color: red; 
 }
 
 .title_grey-container{
@@ -92,9 +90,7 @@ figure{
   color: rgb(221, 185, 238); 
   
   height: 100%; 
-  padding: 0 10%; 
-
-  flex-grow: 5; 
+  flex-grow: 1; 
 }
 
 .figure_grey-container{
@@ -102,20 +98,19 @@ figure{
   display: flex; 
   align-items: center; 
   justify-content: flex-end; 
-  flex-grow: 0;
+  box-sizing: border-box;
+  
   height: 100%; 
-
-  padding: 0 15%; 
+  width: 22%; 
 
   background-color: #bc3183; 
 }
 
 .img_grey-container{
-  height: 25px; 
+  height: auto; 
 }
 
 /* Troisième bloc purple*/
-
 
 /* Textes */
 
