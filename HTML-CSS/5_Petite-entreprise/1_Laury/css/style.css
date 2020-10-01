@@ -19,15 +19,13 @@ header{
   display: flex; 
   flex-direction: row; 
   justify-content: space-evenly; 
-  align-items: baseline; 
-  background-color: green; 
+  align-items: baseline;  
   font-size: 1.5rem; 
   color: white; 
 }
 
 header p{
   font-size: 1rem; 
-  color: black; 
 }
 
 /* Englobage général */
@@ -45,7 +43,7 @@ header p{
   /* width: calc(750px/4); */
 }
 
-ul{
+nav ul{
   list-style-type: none;
   padding: 0; 
 }
@@ -63,9 +61,6 @@ nav a {
 nav a:hover, .actuel{
   background: green; 
 }
-
-
-
 
 /* Englobage main*/
 main{
