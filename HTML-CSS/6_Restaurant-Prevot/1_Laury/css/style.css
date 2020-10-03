@@ -12,11 +12,11 @@ body{
 }
 
 figure{
-  /* margin: 0;  */
+  margin: 0; 
 }
 
 img{
-  display: block; 
+  display: block;
 }
 
 a{
@@ -62,24 +62,22 @@ nav ul li a:hover,:focus,:active{
 .first-section{
   display: flex; 
   flex-direction: row; 
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
   background-color: pink; 
 }
 
 /* Section 1 - p */
 .p_first-section{
   display: flex; 
-  justify-content: space-evenly;
-  width: 85%; 
 }
 
 .pn_first-section{
-  width: 30%; 
 }
 
 /* Section 1 - img */
 .first-section img{
-  
+  box-shadow: 5px 5px #827a7a; 
+  margin: 20px 25px 0 0; 
 }
 
 /* Textes */
