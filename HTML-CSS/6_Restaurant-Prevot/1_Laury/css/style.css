@@ -1,0 +1,97 @@
+/* Restaurant Prévôt */
+
+/* Général */
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0; 
+}
+
+#container{
+  width: 1200px; 
+  margin: 0 auto; 
+}
+
+figure{
+  /* margin: 0;  */
+}
+
+img{
+  display: block; 
+}
+
+a{
+  color: #665033
+}
+
+/* Header */
+header{
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: flex-end;
+  background-color: #665033; 
+}
+
+h1{
+  font-size: 3.5rem; 
+  margin: 0;  
+  color: #ffd49b;
+}
+
+/* Nav */
+nav{
+  display: flex; 
+  background-color: #bfbfbf; 
+}
+
+nav ul{
+  display: flex; 
+  justify-content: space-around; 
+  width: 100%; 
+  list-style-type: none; 
+}
+
+nav ul li a{
+  color: blue; 
+}
+
+nav ul li a:hover,:focus,:active{
+  color: red; 
+}
+
+/*Section 1*/ 
+.first-section{
+  display: flex; 
+  flex-direction: row; 
+  padding-bottom: 25px; 
+  background-color: pink; 
+}
+
+/* Section 1 - p */
+.p_first-section{
+  display: flex; 
+  justify-content: space-evenly;
+  width: 85%; 
+}
+
+.pn_first-section{
+  width: 30%; 
+}
+
+/* Section 1 - img */
+.first-section img{
+  
+}
+
+/* Textes */
+header, h1, h2, h3, footer{
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+p{
+  font-size: 1rem; 
+}
+
+strong{
+  color: #ff8d6a; 
+}
+
