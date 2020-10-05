@@ -1,0 +1,8 @@
+#coucou{
+  width: 300px; 
+  height: 200px; 
+  background-color: cornflowerblue; 
+  /* Le positionnement relative est hors-flux. Top, bottom, right, left, px positifs ou négatifs */
+  position: relative; 
+  top: 50px; 
+}
