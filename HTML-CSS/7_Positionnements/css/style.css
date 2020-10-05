@@ -5,7 +5,6 @@
   position: relative; /* par défaut : static */
   /* Top, bottom, right, left, px positifs ou négatifs */ 
   top: 50px; 
-  z-index: 1;
 }
 
 #bleu{
@@ -18,3 +17,50 @@
   z-index: -2; 
 }
 
+#jaune{
+  width: 600px; 
+  height: 600px; 
+  background-color: yellow;
+  position: relative;  
+}
+
+#red{
+  width: 20px; 
+  height: 20px; 
+  background-color: red; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+}
+
+figure{
+  display: inline-block; /* Inline block permet d'avoir la taille de l'image de base */ 
+  /* width: 15%;  */
+  position: relative; 
+  overflow: hidden; 
+}
+
+figcaption{
+  display: block; 
+  position: absolute;
+  bottom: -35px; 
+  padding: 10px 0; 
+  /* left: 0; 
+  right: 0;  */
+  width: 100%; 
+  /* Left 0 et right 0 vont étirer le tout, width:100% fait pareil !  */
+  text-align: center; 
+  transition: bottom 1s ease-out; 
+  background-color: rgba(128, 128, 128, 0.575); 
+}
+
+figure:hover figcaption{
+  bottom: 0; 
+}
+
+img{
+  display: block;
+  width: 100%;  
+}
+
+/* Em et Rem */
