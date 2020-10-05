@@ -64,3 +64,39 @@ img{
 }
 
 /* Em et Rem */
+html{
+  font-size: 100%; 
+}
+
+p{
+  font-size: 1rem; 
+}
+
+section{
+  background-color: antiquewhite; 
+  padding: 50px; 
+  font-size: 2rem; 
+}
+
+
+article{
+  background-color: aquamarine; 
+  padding: 25px; 
+  margin-bottom: 30px; 
+  font-size: 2rem; 
+}
+
+section div{
+  background-color: pink; 
+}
+
+/* Pseudo éléments */
+/* ::before ::after deux points pour différencier avec la pseudo class */
+
+#intro::before{
+  content: "intro / "; /*obligatoire pour créer l'élement, peut être laissé vide */
+}
+
+#intro::after{
+  content: "/ fin de l'intro"; 
+}
