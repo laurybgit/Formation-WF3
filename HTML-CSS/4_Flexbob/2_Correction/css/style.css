@@ -173,18 +173,16 @@ nav a:hover, nav a:focus {
 
     nav ul{
       list-style-type: none;
-      display: flex;
       flex-direction: column; 
-      justify-content: flex-start;
       width: 75vw;
       position: absolute; 
       left: 5px; 
       z-index: 1; 
-       /* Box shadow ???  */
+      box-shadow: black 5px 5px 5px 5px;
+      background-color: blueviolet; 
     }
 
     nav ul li{
-      background-color: blueviolet;
       height: 125px; 
     }
 
