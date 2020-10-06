@@ -105,7 +105,7 @@ main article+article{
   }
 }
 
-/* Premier point de rupture 640px */
+/* Point de rupture : 640px */
 @media screen and (min-width:640px){
   html{
     font-size: 100%; 
@@ -121,7 +121,88 @@ main article+article{
   }
 
   main figure{
+    width: 30%; 
     margin-right: 2%; 
+  }
+}
+
+
+/* Point de rupture : 1200px */
+@media screen and (min-width:1200px){
+    html{
+      font-size: 80%; 
+    }
+
+    nav ul{
+      display: flex; 
+      list-style-type: none; 
+    }
+
+    nav ul li{
+      width: 25%; 
+    }
+
+    nav ul li a{
+      display: block; 
+      background-color: #aaa; 
+      text-align: center; 
+      padding: 8px 0; 
+      color: #000; 
+      transition: color 500ms ease-out, background-color 500ms ease-out; 
+    }
+
+    nav ul li a:hover, nav ul li a:focus{
+      background-color: #111; 
+      color: white; 
+    }
+
+    .burger{
+      display: none; 
+    }
+
+    section{
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-between;
+    }
+
+    main article{
+      width: 48%; 
+      margin-bottom: 15px; 
+    }
+
+    main article+article{
+      margin-top: 0; 
+    }
+   
+}
+
+/* Point de rupture : 1600px */
+@media screen and (min-width:1600px){
+  main article{
+    width: 22%; 
+    margin-bottom: 0;
+    display: block; 
+  }
+
+  main figure{ 
+    width: 60%; 
+    float: left; 
+    margin-right: 5px; 
+  }
+
+  main p{
+    width: 100%; 
+    margin-top: 0; 
+    hyphens: auto; /* Attention : ne marche pas beaucoup, voir Can I use */ 
+  }
+}
+
+/* Point de rutpure : 2000px */
+@media screen and (min-width:2000px){
+  #wrapper{
+    width: 1200px; 
+    margin: 0 auto; 
   }
 }
 
