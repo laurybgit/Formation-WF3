@@ -23,6 +23,11 @@ img{
 header{
   background-color: aquamarine; 
   padding: 10px 5%; 
+  /* Le header fera constamment 100% du viewport height (vh). On peut aussi dire 100% du viewport width (vw) */
+  /* height: 100vh;  */
+  /* width: 50vw;  */
+
+  /* Un carré : hauteur en 100vw (la hauteur fait 100% de la largeur)  */
 }
 
 header figure{
@@ -99,6 +104,7 @@ main article+article{
 
 /* détection matérielle : seulement print, screen, speech et all */
 /* media print : ce qui va être détecté lorsque le site sera imprimé*/
+/* le print peut aussi avoir d'autres propriétés : orientation de l'appareil, aspect:ratio, color... qu'on utilisera très peu */ 
 @media print{
   header{
     background-color: black; 
@@ -200,10 +206,12 @@ main article+article{
 
 /* Point de rutpure : 2000px */
 @media screen and (min-width:2000px){
+
   #wrapper{
     width: 1200px; 
     margin: 0 auto; 
   }
+
 }
 
 /* @media speech{}
