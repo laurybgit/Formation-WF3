@@ -16,9 +16,15 @@ body{
   background-color: #312413; 
 }
 
+/* ul{
+  margin: 0; 
+  padding: 0; 
+} */ 
+/* LB : Penser à enlever les margin et padding défaut des UL  */
+
 #container{
   width: 1200px; 
-  margin: 0 auto; 
+  margin: 0 auto; /* LB : oui, bien penser à 0 auto */ 
 }
 
 figure{
@@ -59,7 +65,8 @@ header{
 
 h1{
   font-size: 3.5rem; 
-  margin: 0 30px 0 0;  
+  font-weight: normal; 
+  margin: 0 15px; ; 
   color: #ffd49b;
 }
 
@@ -88,7 +95,7 @@ nav ul{
 #article1_content{
   display: flex; /* ligne inutile ! */
   flex-direction: column;  /* ligne inutile ! */
-  margin: 0 30px; /* pourqoi pas padding, en fait ?? */
+  margin: 0 30px; /* pourquoi pas padding, en fait ?? */
 }
 
 #article1_content h2{
@@ -106,6 +113,7 @@ nav ul{
 
 .pn_article p{
   padding: 0 10px 0 0; 
+  text-align: justify; 
   /*text-align : justify; au passage  ;) */
 }
 
