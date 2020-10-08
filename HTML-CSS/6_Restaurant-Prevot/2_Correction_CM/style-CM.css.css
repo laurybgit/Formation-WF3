@@ -1,0 +1,165 @@
+/* Restaurant Prévôt */
+
+/* Général */
+/* n'oublie pas 
+html {
+    font-size: 100%;
+}
+surtout si tu vas utiliser des rem plus tard...
+*/
+
+
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif; /* yes */
+  font-size: 1rem; /* ben voilà tes rem justement... */
+  margin: 0; 
+  background-color: #312413; 
+}
+
+#container{
+  width: 1200px; 
+  margin: 0 auto; 
+}
+
+figure{
+  margin: 0; 
+}
+
+img{
+  display: block;
+}
+
+a{
+  color: #665033; 
+  text-decoration: none; 
+  transition-property: all; /* ok, mais niveau ressources, c'est pas tip-top */
+  transition-delay: 500ms;
+}
+
+a:hover, a:focus, a:active{
+  color: #000000; 
+}
+
+header, h1, h2, h3, footer{
+  font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+  margin-bottom: 0; 
+}
+
+strong{
+  color: #ff8d6a; 
+}
+
+/* Header */
+header{
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: flex-end;
+  background-color: #665033; 
+}
+
+h1{
+  font-size: 3.5rem; 
+  margin: 0 30px 0 0;  
+  color: #ffd49b;
+}
+
+/* Nav */
+nav{
+  display: flex; /* voir ligne 75 */
+  background-color: #bfbfbf; 
+}
+
+nav ul{
+  display: flex; 
+  justify-content: space-around; 
+  width: 100%; /* alors ici inutile mais : il faut supprimer le display flex de ta ligne 68 et enlever les marges par défaut de cette ul, et voilà !*/
+  list-style-type: none; 
+}
+
+
+/*Première section*/
+#article1{
+  display: flex; /* ligne inutile ! */
+  flex-direction: row; /* ligne inutile ! */
+  padding-bottom: 25px;
+  background-color: white; 
+}
+
+#article1_content{
+  display: flex; /* ligne inutile ! */
+  flex-direction: column;  /* ligne inutile ! */
+  margin: 0 30px; /* pourqoi pas padding, en fait ?? */
+}
+
+#article1_content h2{
+  padding: 20px; 
+  color: #665033; 
+}
+
+#p_article{
+  display: flex; /* voilà le vrai flex utile depuis ton header !!! */
+}
+
+.pn_article{
+  width: 30%; 
+}
+
+.pn_article p{
+  padding: 0 10px 0 0; 
+  /*text-align : justify; au passage  ;) */
+}
+
+#article1_content img{
+  box-shadow: 5px 5px #827a7a; 
+  margin: 20px 25px 0 20px; /* pas besoin de margin à droite non ?*/
+}
+
+/* Section 2 */
+
+section+section{ /* nice */
+  display: flex; 
+  padding: 25px; 
+  background-color: #827a7a;
+  color: #222222; 
+}
+
+section+section h2{
+  margin-top: 0; 
+  color:#ffd49b; 
+}
+
+section+section h2, p{ /* la marge que tu mets sur tes p va être contredite ligne 144, t'es au courant ? */
+  margin-left: 20px; 
+}
+
+section+section img{
+  margin-right: 25px; /* je suis pas à fond sur tes margin-right */
+}
+
+#article2{
+  display: flex;  /* ligne inutile ! */
+}
+
+#article2 p{
+  margin: 10px; 
+  text-indent: 20px; 
+}
+
+#article2_content{
+  display: flex; /* je ferai ça avec un float en réalité ! */
+}
+
+/* Footer */
+footer{
+  display: flex;
+  justify-content: center; 
+  border-top: solid 1px #ffd49b; 
+  color: #856f51; 
+  background-color:  #2e2c2c; 
+}
+
+/* attention, tu développes le syndrome de la divite, et de la flexite aigus...
+Ton document peut être (et doit être) plus simple !
+Il y a aussi moyen de revoir un peu le padding versu margin... 
+Après le résultat visuel est conforme, c'est sûr. mais tu as moyend 'être plus juste et plus efficace (efficiente pour être plus juste) */
+
