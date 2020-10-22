@@ -157,33 +157,31 @@ nav a:hover, nav a:focus {
   margin-bottom: 2.5em;
 }
 
-/* Media queries */ 
+/* ______________________________________Media queries ________________________ */ 
 @media screen and (max-width: 420px){
   #global {
-    margin: 0 auto;
+    margin: 0 auto; /* pas besoin car déjà au-dessus */ 
     width: 100vw; 
+    /* On peut mettre la width à 100% ou à 100vw */
   }
 
     /* Nav */
     nav{
       height: 50px; 
       width: 100vw; 
-      position: absolute; 
+      position: relative; 
     }
 
     nav ul{
       list-style-type: none;
       flex-direction: column; 
       width: 75vw;
+      height: 80vh; 
       position: absolute; 
       left: 5px; 
       z-index: 1; 
-      box-shadow: black 5px 5px 5px 5px;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.5) ;
       background-color: blueviolet; 
-    }
-
-    nav ul li{
-      height: 125px; 
     }
 
     nav a {

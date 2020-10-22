@@ -1,0 +1,338 @@
+  /* =========================================================================================
+  ===                                   sport.com                                          ===
+  ============================================================================================
+*/
+/*
+Fond "noir" (marges) : #1C1C1C
+Jaune : #EA9F06
+Textes : #212121
+Bouton "VOIR LA VENTE": dégradé de #363636 à #191919, textes #fff (blanc)
+Fond site articles : #F3F3F3
+fond footer : #373737
+fond réduction -45% : #292929
+points ronds sur "navigation footer" : #D1D1D1*/
+/* ============ Fonts ============ */
+@font-face {
+    font-family: 'liberation_sansbold';
+    src: url('../fonts/liberationsans-bold-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'liberation_sansregular';
+    src: url('../fonts/liberationsans-regular-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* =================================== Généralités =================================== */
+* {
+    box-sizing: border-box;    
+}
+ul, figure, p {
+    margin: 0;
+}
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+/* ========================== Mobile First conception ======================= */
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    color: #212121;
+    font-family: 'liberation_sansregular', Arial, Helvetica, sans-serif;
+}
+/* =================================== header =================================== */
+header {
+    background: url(../images/background2.jpg);
+}
+header>div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 6% 30px 6%;
+}
+/* ..... 1st section : logo & slogan ... */
+header section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header section:first-child h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.3em;
+    margin: 20px 0 0 0;
+}
+header section:first-child span {
+    color: #EA9F06;
+}
+/* ..... 2nd section : message + navig ... */
+header section+section p {
+    font-size: 1.3em;
+    margin: 33px 0 25px 0;
+}
+/* ..... navig ... */
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    color: #212121;
+    font-weight: 600;
+    transition: color 500ms ease-out;
+}
+header nav a:hover, header nav a:focus {
+    color: #EA9F06
+}
+/* =================================== main =================================== */
+main {
+    background-color: black;
+    padding: 25px 25px 0 25px;
+}
+/* ..... img Boxeur ... */
+main>figure {
+    overflow:hidden;
+}
+main>figure img {
+    width: 175%;
+    display: block;
+    position: relative;
+    left: -41%;
+}
+/* ..... articles  ... */
+main section {
+    background-color: #F3F3F3;
+    padding: 45px 0 110px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main article {
+    position: relative;
+    margin-bottom: 70px;
+    width:60%;
+}
+main article img {
+    width:100%;
+}
+main article h2 {
+    font-size : 0.8em;
+    text-align: center;
+    margin-top: -35px;
+    text-transform: uppercase;
+}
+main article .discount {
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    background-color: #292929;
+    color: #EA9F06;
+    font-weight: 600;
+    font-size: 1.6em;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+main article div:first-child {
+    margin-bottom: 35px;
+}
+/* ..... articles : "barre des prix" ... */
+main article div+div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main article div+div .CTA {
+    width: 45%;
+    text-align: center;
+}
+main article div+div .CTA a {
+    display: block;
+    background: linear-gradient(#363636, #191919);
+    color: #fff;
+    padding: 8px;
+    transition: color 500ms ease-out;
+}
+main article div+div .CTA a:hover, 
+main article div+div .CTA a:focus {
+    color: #000;
+    background: #EA9F06;
+}
+main article div+div p+p {
+    font-size: 1.7em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main article .oldPrice {
+    text-decoration: line-through;
+}
+main article .newPrice {
+    color: #EA9F06;
+}
+/* =================================== footer =================================== */
+footer {
+    background-color: #373737;
+}
+footer>div {
+    padding: 55px 25px 30px 25px;
+    text-align: center;
+    position: relative;
+}
+/* ........ footer nav ........ */
+footer nav {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 80%;
+    left: 10%;
+    top: -30px;
+}
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+footer nav a {
+    color: #000;
+    transition: color 300ms ease-out;
+}
+footer nav a:hover, footer nav a:focus {
+    color: #EA9F06;
+}
+footer nav li {
+    position: relative;
+}
+footer nav li+li::before {
+    content:"";
+    display: block;
+    background-color: #D1D1D1;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px
+}
+/* ........ footer arguments ........ */
+footer nav+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 0.7em;
+    border-bottom: 3px solid #818181;
+    margin-bottom: 25px;
+}
+footer nav+section article {
+    width: 47%;
+    margin-bottom: 40px;
+}
+footer nav+section article figure {
+    width: 25%;
+    margin: 0 auto 20px auto;
+}
+footer nav+section article figure img {
+    width: 100%;
+}
+/* ........ footer social ........ */
+footer section+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+footer section+section a {
+    margin:0 25px;
+    transition: opacity 400ms ease-out;
+}
+footer section+section a:hover, footer section+section a:focus {
+    opacity: 0.5;
+}
+/* ........ footer copyright ........ */
+footer section+p {
+    color: #e7e7e7;
+    font-size: 0.78em;
+}
+/* *************************************** RWD ********************************** */
+@media only screen and (min-width:577px) {
+    /* ============================= global layout =============================== */
+    header>div, footer>div, main  {
+        max-width: 1052px;
+        margin: 0 auto;
+    }
+    /* =================================== header =================================== */
+    header>div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 30px 0;
+    }
+    /* ........ logo & slogan ......... */
+    header section:first-child h1 {
+        text-align: left;
+    }
+    /* ........ message & navigation ......... */
+    header section+section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 35%;
+    }
+    header section+section p {
+        margin: 0 0 25px 0;
+    }
+    header section+section nav {
+        width:100%;
+    }
+    /* =================================== main =================================== */
+    main {
+        padding: 25px 0 0 0;
+    }
+    /* ........ large image ......... */
+    main>figure img {
+        width: 100%;
+        position: static;
+    }
+    /* ........ articles ......... */
+    main section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    main article {
+        position: relative;
+        margin-bottom: 70px;
+        width: 35%;
+    }
+    /* =================================== footer =================================== */
+    /* ........ footer nav ......... */
+    footer nav {
+        width: 50%;
+        left: 25%;
+    }
+    footer nav li+li::before {
+        left: -48px;
+    }
+    /* ........ footer div ....... */
+    footer>div {
+        padding-top: 65px;
+    }
+    /* ........ arguments ......... */
+    footer nav+section article {
+        width: 22%;
+    }
+    footer nav+section article figure {
+        width: 30%;
+    }
+    /* ........ social ......... */
+    footer section+section a {
+        margin: 0 35px;
+    }
+}

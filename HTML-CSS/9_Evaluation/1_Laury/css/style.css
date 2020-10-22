@@ -1,0 +1,323 @@
+/* Graphisme catalogue */
+
+/* ================ fonts =============== */
+
+@font-face{
+  font-family: 'LiberationSans-Regular'; 
+  src: url('../../0_Mockup/fonts/liberationsans-regular-webfont-webfont.woff') format('woff'); 
+  src: url('../../0_Mockup/fonts/liberationsans-regular-webfont-webfont.woff2') format('woff2'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'LiberationSans-Bold';
+  src: url('../../0_Mockup/fonts/liberationsans-bold-webfont-webfont.woff') format('woff'); 
+  src: url('../../0_Mockup/fonts/liberationsans-bold-webfont-webfont.woff2') format('woff2'); 
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ============== general =================== */
+html{
+  font-size: 100%; 
+}
+
+body{
+  width: 1024px; 
+  font-family: 'LiberationSans-Regular', Arial, Helvetica, sans-serif; 
+  font-size: 1rem; 
+  margin: 0 auto; 
+}
+
+figure{
+  margin: 0; 
+}
+
+img{
+  display: block; 
+  width: 100%; 
+}
+
+strong{
+  color: #EA9F06; 
+}
+
+ul{
+  margin: 0; 
+  padding: 0; 
+}
+
+/* ================ header ===================*/ 
+header{
+  background-image: url(../../0_Mockup/images/background.jpg);
+  display: flex; 
+  justify-content: space-between; 
+  position: relative; 
+  align-items: flex-end;
+  padding: 2% 2%;   
+}
+
+header a{
+  text-decoration: none; 
+  color: black; 
+}
+
+/* nav */
+header nav ul{
+  display: flex; 
+  list-style-type: none; 
+}
+
+header nav ul li a {
+  display: block; 
+  padding: 5px 25px; 
+  transition: background-color 500ms ease-out, color 500ms ease-out;
+}
+
+header nav ul li a:hover{
+  color: #EA9F06; 
+  background-color: black; 
+}
+/* fin nav  */
+
+header p{
+  position: absolute;  
+  top: 5%; 
+  right: 0.5%; 
+  margin: 0; 
+}
+
+header figure figcaption{
+  margin-top: 3%; 
+}
+
+/* ================ main =================== */
+
+/* section 1 header boxe */
+main{
+  background-color:  #1C1C1C; 
+  padding: 1% 1% 0 1%; 
+}
+
+/* section 2 produits */
+main section+section{
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  background-color: #F3F3F3; 
+  margin: 3% 3% 0 3%; 
+  padding-bottom: 5%; 
+}
+
+main section+section article{
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+  margin: 2%; 
+}
+
+main section+section figcaption{
+  position: relative; 
+  bottom: 30px; 
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+main section+section article div{
+  display: flex; 
+  justify-content: space-evenly; 
+  font-weight: bold;
+}
+
+main section+section p{
+  margin: 0; 
+}
+
+main section+section div p+p{
+  font-size: 2rem; 
+  font-weight: bold; 
+}
+
+main section+section div p:nth-of-type(2){
+  text-decoration: line-through;
+}
+
+/* bloc promo */
+.promo{
+  width: 60px; 
+  position: relative; 
+  left: 85%; 
+  top: 50px;  
+  padding: 3%; 
+  border-radius: 10%; 
+  color: orange; 
+  background-color: black; 
+  font-size: 1.3rem; 
+}
+
+/* bouton achat */
+.cta{
+  width: 150px; 
+  text-align: center;
+  font-weight: normal; 
+}
+
+.cta a{
+display: block;
+background: linear-gradient(#363636, #191919);
+border-radius: 3px;
+color: white; 
+text-decoration: none;
+padding: 5px 9px;
+transition: color 1s ease-out; 
+}
+
+.cta a:hover, .cta a:focus{
+  color: orange; 
+}
+
+/* ============= footer ============= */ 
+footer{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  background-color: black; 
+  color: white; 
+}
+
+footer nav{
+  display: flex; 
+  justify-content: space-evenly;
+  background-color: white; 
+  width: 500px;  
+  border-radius: 30px; 
+  padding: 3%; 
+  position: relative; 
+  bottom: 35px; 
+}
+
+footer nav a{
+  color: black; 
+  text-decoration: none; 
+  transition: color 500ms ease-out; 
+}
+
+footer nav a:hover, a:focus, a:active{
+  color: orange; 
+}
+
+footer nav ul{
+  display: flex; 
+  width: 100%;
+  justify-content: space-between; 
+  padding: 0 3%; 
+  align-items: center; 
+  list-style-type: none; 
+}
+
+footer section{
+  display: flex; 
+  justify-content: center; 
+  padding: 1%; 
+}
+
+footer article{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3%; 
+}
+
+hr{
+  width: 85%; 
+  height: 3px; 
+  background-color: grey; 
+}
+
+footer article figure{
+  width: 35%; 
+  margin: 0;
+  padding: 0;  
+}
+
+#RS{
+  display: flex; 
+  flex-direction: column;
+}
+#RS figure{
+  display: flex; 
+  justify-content: space-around; 
+}
+
+/* ========== media queries =============== */
+  @media screen and (max-width:576px){
+    #container{
+      width: 100vw; 
+    }
+
+/* ================ header ===================*/ 
+  header{
+    display: block; 
+    padding: 2% 2%;   
+  }
+
+  header figure{
+    width: 50vw; 
+    margin: auto; 
+    text-align: center; 
+    padding: 2%; 
+  }
+
+  header p{
+    position: relative; 
+    left: 3%; 
+    margin: 1%;   
+  }
+  
+  header nav ul{
+    display: flex; 
+    justify-content: space-between;
+    list-style-type: none; 
+  }
+
+/* ============ footer ========== */
+
+  /* nav */
+  footer nav{ 
+    width: 75vw;  
+    bottom: 22px; 
+  }
+  
+  footer nav a{
+    color: black; 
+    text-decoration: none; 
+  }
+  
+  footer nav ul{
+    display: flex; 
+    width: 100%;
+    justify-content: space-between; 
+    padding: 0 3%; 
+    align-items: center; 
+    list-style-type: none; 
+  }
+  
+  /* autres */
+  footer section{
+    flex-wrap: wrap; 
+    padding: 0; 
+  }
+
+  footer article{
+    width: 47vw; 
+    padding: 0 0 0 3%;  
+  }
+
+  #RS{
+    margin-top: 5vh; 
+  }
+  }
+
+
